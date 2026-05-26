@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Premium Signals Channel - Join Now</title>
+    <style>
+        :root {
+            --gold: #f0b90b;
+            --gold-dark: #c99a08;
+            --bg-dark: #0a0a0f;
+            --bg-card: #12121a;
+            --bg-card2: #1a1a26;
+            --text: #e8e8f0;
+            --text-muted: #b0b0c0;
+            --accent: #ff4d6a;
+            --accent-glow: #ff3b5c;
+            --green: #00e676;
+            --blue-accent: #4da8ff;
+            --purple: #a855f7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            background-image:
+                radial-gradient(ellipse at 30% 10%, rgba(240, 185, 11, 0.06) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 20%, rgba(255, 77, 106, 0.05) 0%, transparent 60%),
+                radial-gradient(ellipse at 50% 60%, rgba(168, 85, 247, 0.04) 0%, transparent 60%);
+        }
+
+        /* Floating particles */
+        .particles-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            animation: floatUp linear infinite;
+            opacity: 0;
+        }
+        @keyframes floatUp {
+            0% { transform: translateY(100vh) scale(0); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 0.3; }
+            100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+        }
+
+        .main-container {
+            position: relative;
+            z-index: 1;
+            max-width: 520px;
+            margin: 0 auto;
+            padding: 20px 16px 40px;
+        }
+
+        .top-urgency-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #ff3b5c, #ff6b81);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            margin: 0 auto 16px;
+            width: fit-content;
+            animation: pulseBadge 2s ease-in-out infinite;
+            box-shadow: 0 0 30px rgba(255, 59, 92, 0.5), 0 4px 20px rgba(255, 59, 92, 0.3);
+            text-transform: uppercase;
+        }
+        .top-urgency-badge .dot {
+            width: 10px;
+            height: 10px;
+            background: #fff;
+            border-radius: 50%;
+            animation: blinkDot 1s ease-in-out infinite;
+        }
+        @keyframes pulseBadge {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 30px rgba(255, 59, 92, 0.5), 0 4px 20px rgba(255, 59, 92, 0.3); }
+            50% { transform: scale(1.04); box-shadow: 0 0 50px rgba(255, 59, 92, 0.7), 0 6px 30px rgba(255, 59, 92, 0.5); }
+        }
+        @keyframes blinkDot {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+
+        .channel-photo-wrapper {
+            position: relative;
+            margin: 0 auto 8px;
+            width: 140px;
+            height: 140px;
+            z-index: 2;
+        }
+        .channel-photo-glow {
+            position: absolute;
+            inset: -12px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, var(--gold), var(--accent-glow), var(--purple), var(--blue-accent), var(--gold));
+            animation: rotateGlow 4s linear infinite;
+            filter: blur(18px);
+            opacity: 0.7;
+        }
+        @keyframes rotateGlow {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .channel-photo-ring {
+            position: absolute;
+            inset: -6px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            border-top-color: var(--gold);
+            border-right-color: var(--accent-glow);
+            animation: rotateGlow 3s linear infinite;
+        }
+        .channel-photo-ring2 {
+            position: absolute;
+            inset: -9px;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            border-bottom-color: var(--purple);
+            border-left-color: var(--blue-accent);
+            animation: rotateGlow 5s linear infinite reverse;
+        }
+        .channel-photo {
+            position: relative;
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #1e1e2e;
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+            z-index: 2;
+            background: #1a1a2e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .channel-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .channel-photo .fallback-icon {
+            font-size: 60px;
+            color: var(--gold);
+        }
+
+        .verified-badge {
+            position: absolute;
+            bottom: 2px;
+            right: 2px;
+            background: var(--blue-accent);
+            color: #fff;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            border: 3px solid #0a0a0f;
+            z-index: 5;
+            box-shadow: 0 0 20px rgba(77, 168, 255, 0.6);
+            animation: verifiedPop 2s ease-in-out infinite;
+        }
+        @keyframes verifiedPop {
+            0%, 100% { box-shadow: 0 0 20px rgba(77, 168, 255, 0.6); }
+            50% { box-shadow: 0 0 35px rgba(77, 168, 255, 0.9); }
+        }
+
+        .channel-name-section {
+            text-align: center;
+            margin-bottom: 6px;
+        }
+        .channel-name {
+            font-size: 1.6rem;
+            font-weight: 800;
+            letter-spacing: -0.3px;
+            background: linear-gradient(135deg, #fff, #e0d8c8, #f0b90b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 4px;
+        }
+        .channel-handle {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        .subscriber-count {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--bg-card2);
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: #fff;
+            margin-top: 6px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+        }
+        .subscriber-count .live-dot {
+            width: 9px;
+            height: 9px;
+            background: #00e676;
+            border-radius: 50%;
+            animation: blinkDot 1.2s ease-in-out infinite;
+        }
+
+        .main-card {
+            background: var(--bg-card);
+            border-radius: 24px;
+            padding: 24px 20px 28px;
+            margin-top: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.03) inset;
+            position: relative;
+            overflow: hidden;
+        }
+        .main-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--accent-glow), var(--purple), var(--gold));
+            background-size: 200% 100%;
+            animation: shimmerBar 3s ease-in-out infinite;
+        }
+        @keyframes shimmerBar {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        .headline-badge {
+            text-align: center;
+            margin-bottom: 14px;
+        }
+        .headline-badge span {
+            display: inline-block;
+            background: linear-gradient(135deg, rgba(240, 185, 11, 0.15), rgba(255, 77, 106, 0.12));
+            color: var(--gold);
+            padding: 8px 18px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border: 1px solid rgba(240, 185, 11, 0.3);
+        }
+        .main-headline {
+            text-align: center;
+            font-size: 1.35rem;
+            font-weight: 800;
+            line-height: 1.4;
+            margin-bottom: 6px;
+            letter-spacing: -0.2px;
+        }
+        .main-headline .highlight {
+            background: linear-gradient(135deg, #f0b90b, #ffb830);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .sub-headline {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        .trust-strips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+        .trust-strip {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--bg-card2);
+            padding: 10px 14px;
+            border-radius: 14px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .trust-strip:hover {
+            border-color: rgba(240, 185, 11, 0.4);
+            box-shadow: 0 0 20px rgba(240, 185, 11, 0.1);
+            transform: translateY(-2px);
+        }
+        .trust-strip .icon {
+            font-size: 1.1rem;
+        }
+
+        .sureshot-section {
+            background: linear-gradient(135deg, rgba(0, 230, 118, 0.08), rgba(0, 200, 100, 0.04));
+            border-radius: 18px;
+            padding: 18px 16px;
+            margin-bottom: 18px;
+            border: 1px solid rgba(0, 230, 118, 0.2);
+            position: relative;
+        }
+        .sureshot-section .sparkle {
+            position: absolute;
+            top: -8px;
+            right: 20px;
+            font-size: 1.5rem;
+            animation: sparkleFloat 1.5s ease-in-out infinite;
+        }
+        @keyframes sparkleFloat {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-8px) scale(1.3); }
+        }
+        .sureshot-title {
+            font-weight: 800;
+            font-size: 1rem;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #00e676;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .sureshot-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+        .sureshot-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #e0e0f0;
+            line-height: 1.4;
+        }
+        .sureshot-list li .check {
+            flex-shrink: 0;
+            width: 22px;
+            height: 22px;
+            background: #00e676;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.7rem;
+            color: #000;
+            font-weight: 900;
+            margin-top: 1px;
+            box-shadow: 0 0 12px rgba(0, 230, 118, 0.5);
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+        .stat-card {
+            flex: 1;
+            background: var(--bg-card2);
+            border-radius: 16px;
+            padding: 14px 10px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: all 0.3s;
+        }
+        .stat-card:hover {
+            border-color: rgba(240, 185, 11, 0.3);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        .stat-number {
+            font-size: 1.6rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #f0b90b, #ffb830);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+        .stat-label {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 2px;
+        }
+
+        .testimonial-ticker {
+            background: var(--bg-card2);
+            border-radius: 14px;
+            padding: 12px 14px;
+            margin-bottom: 18px;
+            overflow: hidden;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .testimonial-ticker .ticker-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 6px;
+            font-weight: 700;
+            text-align: center;
+        }
+        .ticker-track {
+            display: flex;
+            gap: 16px;
+            animation: scrollTicker 15s linear infinite;
+            width: max-content;
+        }
+        .ticker-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 8px 14px;
+            border-radius: 30px;
+            white-space: nowrap;
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .ticker-item .avatar-mini {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #f0b90b, #ff6b81);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.75rem;
+            color: #000;
+            flex-shrink: 0;
+        }
+        @keyframes scrollTicker {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Countdown timer style */
+        .countdown-box {
+            background: #1e1e2a;
+            border-radius: 12px;
+            padding: 10px;
+            margin: 12px 0;
+            text-align: center;
+            border: 1px solid rgba(255, 77, 106, 0.3);
+        }
+        .countdown-text {
+            font-weight: 700;
+            color: #ff6b81;
+            font-size: 0.9rem;
+        }
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ff4d6a, #f0b90b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0 4px;
+        }
+
+        .join-button-wrapper {
+            position: relative;
+            margin-bottom: 8px;
+        }
+        .join-button-glow {
+            position: absolute;
+            inset: -6px;
+            border-radius: 60px;
+            background: linear-gradient(135deg, #f0b90b, #ff4d6a, #a855f7, #4da8ff, #f0b90b);
+            background-size: 300% 300%;
+            animation: glowShift 3s ease-in-out infinite;
+            filter: blur(20px);
+            opacity: 0.8;
+            z-index: 0;
+        }
+        @keyframes glowShift {
+            0%, 100% { background-position: 0% 50%; }
+            25% { background-position: 100% 0%; }
+            50% { background-position: 100% 100%; }
+            75% { background-position: 0% 100%; }
+        }
+        .join-button {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            padding: 18px 28px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #000;
+            background: linear-gradient(135deg, #f0b90b, #ffb830);
+            border: none;
+            border-radius: 60px;
+            cursor: pointer;
+            box-shadow: 0 8px 40px rgba(240, 185, 11, 0.4);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            text-decoration: none;
+            -webkit-tap-highlight-color: transparent;
+            user-select: none;
+            outline: none;
+        }
+        .join-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 50px rgba(240, 185, 11, 0.6);
+            background: linear-gradient(135deg, #ffc107, #ffc940);
+        }
+        .join-button:active {
+            transform: scale(0.96);
+            box-shadow: 0 4px 20px rgba(240, 185, 11, 0.5);
+            transition: all 0.1s ease;
+        }
+        .join-button .btn-arrow {
+            display: inline-block;
+            animation: bounceArrow 0.8s ease-in-out infinite;
+            font-size: 1.4rem;
+        }
+        @keyframes bounceArrow {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(6px); }
+        }
+        .join-button .ripple {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            transform: scale(0);
+            animation: rippleEffect 0.8s ease-out forwards;
+            pointer-events: none;
+        }
+        @keyframes rippleEffect {
+            to { transform: scale(4); opacity: 0; }
+        }
+
+        .urgency-text {
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.85rem;
+            color: #ff6b81;
+            margin-top: 8px;
+            animation: pulseText 1.5s ease-in-out infinite;
+        }
+        @keyframes pulseText {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 1; }
+        }
+
+        .bottom-trust {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 16px;
+            flex-wrap: wrap;
+        }
+        .bottom-trust-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .bottom-trust-item .dot-icon {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #00e676;
+        }
+
+        @media (max-width: 400px) {
+            .main-headline { font-size: 1.15rem; }
+            .join-button { font-size: 1rem; padding: 16px 20px; }
+            .channel-photo-wrapper { width: 110px; height: 110px; }
+            .channel-photo { width: 110px; height: 110px; }
+            .verified-badge { width: 28px; height: 28px; font-size: 13px; bottom: 0px; right: 0px; }
+            .stats-row { flex-direction: column; gap: 6px; }
+            .trust-strips { gap: 5px; }
+            .trust-strip { font-size: 0.7rem; padding: 8px 10px; }
+        }
+
+        ::selection { background: rgba(240, 185, 11, 0.3); color: #fff; }
+    </style>
+</head>
+<body>
+
+    <div class="particles-container" id="particlesContainer"></div>
+
+    <div class="main-container">
+        <div class="top-urgency-badge">
+            <span class="dot"></span> LIMITED SLOTS AVAILABLE <span class="dot"></span>
+        </div>
+
+        <div class="channel-photo-wrapper">
+            <div class="channel-photo-glow"></div>
+            <div class="channel-photo-ring"></div>
+            <div class="channel-photo-ring2"></div>
+            <div class="channel-photo">
+                <img src="chaudhary.jpg" alt="Channel Photo"
+                onerror="this.style.display='none';this.parentElement.querySelector('.fallback-icon').style.display='block';">
+                <span class="fallback-icon" style="display:none;">📈</span>
+            </div>
+            <div class="verified-badge">✓</div>
+        </div>
+
+        <div class="channel-name-section">
+            <div class="channel-name">🏆 Premium Trade Signals</div>
+            <div class="channel-handle">@premium_signals_official</div>
+            <div class="subscriber-count">
+                <span class="live-dot"></span> <strong>48,392+</strong> Active Members
+            </div>
+        </div>
+
+      
+               <div class="join-button-wrapper">
+                <div class="join-button-glow"></div>
+                <button class="join-button" id="joinButton" onclick="handleJoin()">
+                    ⚡ JOIN CHANNEL NOW <span class="btn-arrow">→</span>
+                </button>
+            </div>
+
+
+        <div class="main-card">
+            <div class="headline-badge">
+                <span>⭐ 100% SURESHOT ACCURACY ⭐</span>
+            </div>
+            <div class="main-headline">
+                Get <span class="highlight">100% Sureshot</span> Trading Signals Daily
+            </div>
+            <div class="sub-headline">
+                Join the <strong>#1 Rated</strong> signals channel with verified results. Every signal is <strong>100% confirmed & guaranteed</strong> profitable.
+            </div>
+
+            <div class="trust-strips">
+                <div class="trust-strip"><span class="icon">🎯</span> 100% Accurate</div>
+                <div class="trust-strip"><span class="icon">✅</span> Sureshot Picks</div>
+                <div class="trust-strip"><span class="icon">💰</span> Guaranteed Profit</div>
+                <div class="trust-strip"><span class="icon">🔒</span> Risk-Free</div>
+            </div>
+
+            <div class="sureshot-section">
+                <span class="sparkle">✨</span>
+                <div class="sureshot-title">🔥 WHY WE ARE 100% SURESHOT</div>
+                <ul class="sureshot-list">
+                    <li><span class="check">✓</span><span><strong>100% Verified</strong> signals with screenshot proof — zero manipulation</span></li>
+                    <li><span class="check">✓</span><span><strong>99.8% Win Rate</strong> across 10,000+ trades</span></li>
+                    <li><span class="check">✓</span><span><strong>Instant Alerts</strong> — get signals before the market moves</span></li>
+                    <li><span class="check">✓</span><span><strong>Lifetime Access</strong> — join once, stay forever</span></li>
+                    <li><span class="check">✓</span><span><strong>24/7 Expert Support</strong> — round the clock analysis</span></li>
+                </ul>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-card"><div class="stat-number">10,247+</div><div class="stat-label">Sureshot Trades</div></div>
+                <div class="stat-card"><div class="stat-number">99.8%</div><div class="stat-label">Win Rate</div></div>
+                <div class="stat-card"><div class="stat-number">₹4.8Cr+</div><div class="stat-label">Client Profits</div></div>
+            </div>
+
+            <div class="testimonial-ticker">
+                <div class="ticker-label">💬 Real Member Feedbacks</div>
+                <div class="ticker-track" id="tickerTrack">
+                    <div class="ticker-item"><span class="avatar-mini">R</span> "Made ₹45,000 today! Sureshot!" ⭐⭐⭐⭐⭐</div>
+                    <div class="ticker-item"><span class="avatar-mini">A</span> "100% genuine signals 🔥" ⭐⭐⭐⭐⭐</div>
+                    <div class="ticker-item"><span class="avatar-mini">V</span> "Best channel ever! Profits daily 💰" ⭐⭐⭐⭐⭐</div>
+                    <div class="ticker-item"><span class="avatar-mini">S</span> "Joined yesterday, already in profit!" ⭐⭐⭐⭐⭐</div>
+                    <div class="ticker-item"><span class="avatar-mini">P</span> "Sureshot hai bhai! 100% real ✅" ⭐⭐⭐⭐⭐</div>
+                    <div class="ticker-item"><span class="avatar-mini">M</span> "Lifetime member now. No regrets!" ⭐⭐⭐⭐⭐</div>
+                </div>
+            </div>
+
+            <!-- Auto-redirect countdown -->
+            <div class="countdown-box">
+                <span class="countdown-text">⏳ Auto-redirecting in </span>
+                <span class="countdown-number" id="countdownDisplay">8</span>
+                <span class="countdown-text"> seconds...</span>
+            </div>
+
+
+            <div class="urgency-text">
+                <span class="fire">🔥</span> Only <strong>27 slots</strong> remaining — Offer ends soon! <span class="fire">🔥</span>
+            </div>
+        </div>
+
+        <div class="bottom-trust">
+            <div class="bottom-trust-item"><span class="dot-icon"></span> 100% Secure</div>
+            <div class="bottom-trust-item"><span class="dot-icon"></span> Instant Access</div>
+            <div class="bottom-trust-item"><span class="dot-icon"></span> 4.9★ Rating</div>
+            <div class="bottom-trust-item"><span class="dot-icon"></span> 48K+ Members</div>
+        </div>
+    </div>
+
+    <script>
+        // ========== SOURCE PROTECTION ==========
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Block common keyboard shortcuts for viewing source / devtools
+        document.addEventListener('keydown', function(e) {
+            // F12
+            if (e.key === 'F12' || e.keyCode === 123) {
+                e.preventDefault();
+                return false;
+            }
+            // Ctrl+U (view source)
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'U' || e.keyCode === 85)) {
+                e.preventDefault();
+                return false;
+            }
+            // Ctrl+Shift+I (dev tools)
+            if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.keyCode === 73)) {
+                e.preventDefault();
+                return false;
+            }
+            // Ctrl+Shift+J (console)
+            if (e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j' || e.keyCode === 74)) {
+                e.preventDefault();
+                return false;
+            }
+            // Ctrl+Shift+C (inspect element)
+            if (e.ctrlKey && e.shiftKey && (e.key === 'C' || e.key === 'c' || e.keyCode === 67)) {
+                e.preventDefault();
+                return false;
+            }
+            // Ctrl+S (save page)
+            if (e.ctrlKey && (e.key === 's' || e.key === 'S' || e.keyCode === 83)) {
+                e.preventDefault();
+                return false;
+            }
+        });
+
+        // Optional: Clear console warning (still visible if devtools already open)
+        console.clear();
+        console.log('%c⚠️ Stop!', 'font-size: 30px; color: red;');
+        console.log('%cThis area is restricted.', 'font-size: 16px;');
+
+        // ========== AUTO REDIRECT AFTER 8 SECONDS ==========
+        const channelLink = 'https://t.me/+3pwAOgEkzdxmMGNl'; // <-- REPLACE WITH YOUR LINK
+        let secondsLeft = 8;
+        const countdownEl = document.getElementById('countdownDisplay');
+
+        function updateCountdown() {
+            countdownEl.textContent = secondsLeft;
+            if (secondsLeft <= 0) {
+                window.location.href = channelLink;
+                return;
+            }
+            secondsLeft--;
+            setTimeout(updateCountdown, 1000);
+        }
+
+        // Start countdown
+        updateCountdown();
+
+        // ========== PARTICLES ==========
+        const particlesContainer = document.getElementById('particlesContainer');
+        const colors = ['#f0b90b', '#ff4d6a', '#a855f7', '#4da8ff', '#00e676', '#ffb830', '#ff6b81'];
+        for (let i = 0; i < 35; i++) {
+            const particle = document.createElement('div');
+            particle.classList.add('particle');
+            const size = Math.random() * 5 + 2;
+            particle.style.width = size + 'px';
+            particle.style.height = size + 'px';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.background = colors[Math.floor(Math.random() * colors.length)];
+            particle.style.animationDuration = (Math.random() * 10 + 8) + 's';
+            particle.style.animationDelay = Math.random() * 10 + 's';
+            particle.style.boxShadow = `0 0 ${size*3}px ${particle.style.background}`;
+            particlesContainer.appendChild(particle);
+        }
+
+        // ========== TICKER DUPLICATION ==========
+        const tickerTrack = document.getElementById('tickerTrack');
+        const originalItems = tickerTrack.innerHTML;
+        tickerTrack.innerHTML = originalItems + originalItems;
+
+        // ========== JOIN BUTTON RIPPLE & MANUAL JOIN ==========
+        const joinButton = document.getElementById('joinButton');
+        joinButton.addEventListener('click', function(e) {
+            const ripple = document.createElement('span');
+            ripple.classList.add('ripple');
+            const rect = joinButton.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            ripple.style.width = ripple.style.height = size + 'px';
+            ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+            ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+            joinButton.appendChild(ripple);
+            setTimeout(() => ripple.remove(), 800);
+        });
+
+        function handleJoin() {
+            joinButton.style.transform = 'scale(1.06)';
+            joinButton.style.boxShadow = '0 20px 60px rgba(240,185,11,0.8)';
+            setTimeout(() => {
+                joinButton.style.transform = 'scale(1)';
+                joinButton.style.boxShadow = '0 8px 40px rgba(240,185,11,0.4)';
+            }, 200);
+
+            const userConfirmed = confirm('🚀 Ready to join the #1 Sureshot Signals Channel?\n\n🔥 Get instant access to 100% verified trading signals!\n\nClick OK to join now!');
+            if (userConfirmed) {
+                window.open(channelLink, '_blank');
+                burstEffect();
+            }
+        }
+
+        function burstEffect() {
+            for (let i = 0; i < 25; i++) {
+                setTimeout(() => {
+                    const burst = document.createElement('div');
+                    burst.style.cssText = `
+                        position: fixed; pointer-events: none; z-index: 9999;
+                        width: 14px; height: 14px; border-radius: 50%;
+                        background: ${colors[Math.floor(Math.random()*colors.length)]};
+                        top: 50%; left: 50%;
+                        box-shadow: 0 0 20px currentColor;
+                        transition: all 0.8s cubic-bezier(0.25,0.46,0.45,0.94);
+                        opacity: 1;
+                    `;
+                    document.body.appendChild(burst);
+                    const angle = Math.random() * Math.PI * 2;
+                    const distance = Math.random() * 200 + 80;
+                    const tx = Math.cos(angle) * distance;
+                    const ty = Math.sin(angle) * distance;
+                    requestAnimationFrame(() => {
+                        burst.style.transform = `translate(${tx}px, ${ty}px) scale(0)`;
+                        burst.style.opacity = '0';
+                    });
+                    setTimeout(() => burst.remove(), 900);
+                }, i * 20);
+            }
+        }
+
+        // ========== STATS ANIMATION (unchanged) ==========
+        const statNumbers = document.querySelectorAll('.stat-number');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+                    if (el.dataset.animated) return;
+                    el.dataset.animated = 'true';
+                    const text = el.textContent;
+                    const num = parseInt(text.replace(/[^0-9]/g, ''));
+                    if (num > 0) {
+                        animateCounterRaw(el, num, 1500, text);
+                    }
+                }
+            });
+        }, { threshold: 0.5 });
+        statNumbers.forEach(el => observer.observe(el));
+
+        function animateCounterRaw(el, target, duration, originalText) {
+            const start = 0;
+            const range = target - start;
+            const increment = range / (duration / 16);
+            let current = start;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    el.textContent = originalText;
+                    clearInterval(timer);
+                } else {
+                    if (originalText.includes('%')) {
+                        el.textContent = Math.floor(current) + '%';
+                    } else if (originalText.includes('Cr')) {
+                        el.textContent = '₹' + (current / 100).toFixed(1) + 'Cr+';
+                    } else {
+                        el.textContent = Math.floor(current).toLocaleString() + '+';
+                    }
+                }
+            }, 16);
+        }
+
+        console.log('🔥 Page secured — source viewing blocked, auto-redirect active.');
+    </script>
+</body>
+</html>
